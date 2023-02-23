@@ -10,10 +10,12 @@ while(input !== "quit"){
         var newTodo = prompt("Enter new todo");
         //add to todos array
         todos.push(newTodo); 
-    } elseif(input === "delete") {
-        //remove from todos
+    } else if(input === "delete") {
+        //remove todos from behind
         todos.pop()
-
+    } else if(input === "clear") {
+        //remove all todos
+        todos.length = 0;
     }
 
     //ask again for new input
